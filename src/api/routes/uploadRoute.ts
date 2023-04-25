@@ -22,7 +22,7 @@ router
   .route('/')
   .post(
     authenticate,
-    upload.single('cat'),
+    upload.single('file'),
     makeThumbnail,
     getCoordinates,
     uploadPost
